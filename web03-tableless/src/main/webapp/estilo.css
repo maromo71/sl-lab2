@@ -1,0 +1,52 @@
+body{
+    background-color: #00000f;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+}
+#site{
+    margin: auto;
+    width: 70%;
+    text-align: left;
+    background-color: #ff0000;
+}
+.topo{
+    width: 100%;
+    display: block;
+    height: 7.5rem;
+    background-color: #ff0000;
+    background-position: center;
+}
+.meio{
+    width: 100%;
+    display: inline;
+}
+.menu{
+    width: 20%;
+    display: block;
+    float: left;
+    font-family: Arial, Times, serif;
+    font-size: 0.75rem;
+    text-align: left;
+    background-color: #ff0000;
+    min-height: 17rem;
+}
+.conteudo{
+    width: 80%;
+    display: inline-block;
+    font-family: Arial, "Times New Roman", serif;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    float: right;
+    min-height: 12rem;
+}
+.conteudo p{
+    padding: 0.875rem;
+}
+.rodape {
+    width: 100%;
+    display: inline-block;
+    background-color: #ff0000;
+    background-position: center;
+    text-align: center;
+    min-height: 22px;
+}

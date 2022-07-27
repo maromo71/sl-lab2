@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.maromo</groupId>
-    <artifactId>web02</artifactId>
+    <artifactId>web03-tableless</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>web02</name>
+    <name>web03-tableless</name>
     <packaging>war</packaging>
 
     <properties>
@@ -50,6 +50,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
             </plugin>
+
         </plugins>
     </build>
 </project>
