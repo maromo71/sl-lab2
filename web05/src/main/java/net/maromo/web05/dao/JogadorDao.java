@@ -1,6 +1,6 @@
-package net.maromo.web04times.dao;
+package net.maromo.web05.dao;
 
-import net.maromo.web04times.model.Jogador;
+import net.maromo.web05.model.Jogador;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

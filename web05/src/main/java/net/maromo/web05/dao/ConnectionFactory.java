@@ -1,4 +1,4 @@
-package net.maromo.web04times.dao;
+package net.maromo.web05.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
