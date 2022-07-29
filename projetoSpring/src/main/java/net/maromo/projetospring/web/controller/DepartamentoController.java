@@ -2,7 +2,6 @@ package net.maromo.projetospring.web.controller;
 
 import net.maromo.projetospring.domain.Departamento;
 import net.maromo.projetospring.service.DepartamentoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,8 +16,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequestMapping("/departamentos")
 public class DepartamentoController {
 	
-	@Autowired
-	private DepartamentoService service;
+	private final DepartamentoService service;
+
+	public DepartamentoController(DepartamentoService service) {
+		this.service = service;
+	}
 
 	@GetMapping("/cadastrar")
 	public String cadastrar(Departamento departamento) {
