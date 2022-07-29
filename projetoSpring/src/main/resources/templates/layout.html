@@ -20,16 +20,19 @@
 <header th:replace="fragments/header :: cabecalho">
     <div>header</div>
 </header>
-<div>
+
+<div  class="layout-main">
     <aside>
         <nav th:replace="fragments/sidebar :: nav-sidebar">
             <span>menu</span>
         </nav>
     </aside>
-    <section>
-        <div>conteúdo principal das páginas</div>
+
+    <section layout:fragment="corpo">
+        <div>conteudo principal das páginas</div>
     </section>
 </div>
+
 <footer th:replace="fragments/footer :: rodape">
     <div>footer</div>
 </footer>
