@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-@Transactional(readOnly = true)
+@Transactional(readOnly = false)
 public class CargoServiceImpl implements CargoService{
 
     private final CargoDao dao;
@@ -41,5 +41,12 @@ public class CargoServiceImpl implements CargoService{
     @Override @Transactional(readOnly = true)
     public List<Cargo> buscarTodos() {
         return dao.findAll();
+    }
+    @Override
+    public boolean cargoTemFuncionarios(Long id) {
+        if (buscarPorId(id).getFuncionarios().isEmpty()) {
+            return false;
+        }
+        return true;
     }
 }
